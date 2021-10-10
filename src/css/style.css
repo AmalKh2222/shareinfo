@@ -1,0 +1,139 @@
+
+*{margin: 0;box-sizing: border-box;}
+
+
+.containar{
+height: 100%;
+display: grid;
+grid-template-rows:80 1fr 450px ;
+
+}
+
+.head{
+box-shadow: 13px 17px 62px -3px rgba(196,196,196,0.7);
+background-color: rgb(175, 172, 172);
+color: white;
+display: grid;
+grid-template-columns:repeat(auto-fit,200px);
+position:sticky ;
+top:0;
+z-index: 1;
+border-radius: 30px;
+justify-content: space-between;
+
+}
+
+
+.head .icon{
+    padding-left: 40px;
+   display:flex;
+  align-items: center;
+}
+.head .icon .fas{
+    font-size: x-large;
+color: white;
+}
+.sign{ padding-top: 25px;}
+
+@font-face {
+    font-family: 'Font';
+    src: url(../assets/font/GreatVibes-Regular.woff);
+  }
+
+
+.logo{ 
+font-family: Font ;
+font-size:40px;
+color: white;
+padding-top: 15px;
+font-weight: bold;
+
+}
+   
+
+
+ .content{
+justify-content: space-around;
+display: grid;
+/*grid-template-columns:repeat(4,minmax(200px,1fr));*/
+background-color: rgb(248, 248, 248);
+padding-top: 100px;
+
+}
+.all{
+    padding-top: 150px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.chat{
+padding-left: 40px;
+padding-right: 40px;
+padding-top: 30px;
+padding-bottom: 30px;
+height: 170px;
+width: 370px;
+border-bottom-left-radius: 400px;
+border-bottom-right-radius:200px;
+border-top-right-radius:400px;
+background-color: white;
+word-break:break-all;
+border-left:2px solid rgb(175, 172, 172);
+border-top:2px solid rgb(175, 172, 172);
+text-overflow: ellipsis;
+overflow: hidden;
+box-shadow: 13px 17px 62px -3px rgba(196,196,196,0.7);
+
+
+}
+
+
+.pers img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 2px solid rgb(175, 172, 172);
+    display: block;
+    position: absolute;
+    bottom: 450px;
+    left: -85px;
+    top: 32px;
+    box-shadow: 13px 17px 62px -3px rgba(196,196,196,0.7);
+}
+.footer{
+background-color:    rgb(248, 248, 248);
+border-radius: 10px;
+font-family: Font ;
+color:rgb(122, 122, 122);
+font-size:large ;
+font-weight: bolder;
+display:grid;
+grid-template-rows: 60px  60px;
+align-content: center;
+justify-content: center;
+padding-top: 330px;
+letter-spacing: 5px;
+}
+
+.footer .icon{
+
+    padding-left: 20px;
+}
+
+.fas,.fab{
+padding-left: 13px;
+    font-size:17px;
+}
+
+
+/*.chat::after{
+    content: "";
+    background-color: yellow;
+    background-image: linear-gradient(yellow,rgb(175, 172, 172), yellow );
+    height: 150px;
+    width: 5px;
+    position: absolute;
+
+
+
+}*/
